@@ -22,8 +22,8 @@ class Server():
 
 class client():
     def __init__(self):
-        client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        client.connect((IP,PORT))
+        self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.client.connect((IP,PORT))
         while True:
-            data2 = client.recv(1024).decode("utf-8")
-            print(data2)
+            self.data2 = self.client.recv(1024).decode("utf-8")
+            print(self.data2)
