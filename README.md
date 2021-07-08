@@ -1,2 +1,2 @@
 # SocketServer
-This a socketserver which makes the you to create a simple server using this module
+This a socketserver which makes you to create a simple server using this module
